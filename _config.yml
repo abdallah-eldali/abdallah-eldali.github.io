@@ -1,0 +1,128 @@
+# Site
+repository: abdallah-eldali/abdallah-eldali.github.io
+# favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Abdallah El Dali
+title: Junior Software Developer / DevOps
+email: abdallah.eldali0@gmail.com
+website: www.github.com/abdallah-eldali
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+github_username:  abdallah-eldali
+linkedin_username: abdallah-eldali
+
+# About Section
+about_title: About Me
+# about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  My name is Abdallah El Dali and I'm currently a Computer Science student with a special interest in software development, low-level programming, working with Linux (both for development and personal use), DevOps and Cybersecurity.
+  
+  I have a total of 1 year of experience as a Software Developer and DevOps as part of my internships.
+
+  I'm currently learning more about <mark>Linux</mark> for personal use and to have the opportunity to learn more about operating systems and low-level programming as a whole.
+content:
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Carleton University
+        caption: "2018 - 2023 - GPA: 11.4/12"
+        sub_title: BCS Computer Science (Honours) - Cybersecurity
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Kinaxis
+        link: kinaxis.com
+        sub_title: Co-Op Developer, Platform, Application Server 
+        caption: May 2022 - August 2022
+        description: |
+            Worked on the Front-End Technology team, where my main task was modifying and improving the front-end client of the product RapidResponse (RR) using <mark>Java</mark> and <mark>C# (.NET)</mark>.
+            
+            <b><u>Skills:</u></b> <mark>Java</mark>, <mark>C# (.NET)</mark>, <mark>Front-End Development</mark>, <mark>Alassian Suite (Confluence, Jira, Bitbucker)<mark>, <mark>Git</mark>
+      
+      - layout: left
+        title: Assent
+        link: assent.com
+        sub_title: Software Development Student (DevOps Team), Co-op
+        caption: May 2021 - August 2021
+        description: |
+            Worked in the DevOps team in charge of maintaining and developing tools used by other development teams as well as working with an Infrastructure-as-code (IaC) code base using <mark>Ansible</mark>. I also developed a command-line interface (CLI) using <mark>PowerShell</mark> to encapsulate all commands/scripts used by other developer teams.
+            
+            <b><u>Skills:</u></b> <mark>DevOps</mark>, <mark>Jenkins</mark>, <mark>CI/CD</mark>, <mark>PowerShell</mark>, <mark>Ansible</mark>, <mark>Docker</mark>, <mark>C# (.NET Core)</mark>, <mark>Alassian Suite (Confluence, Jira, Bitbucker)</mark>, <mark>Git</mark>
+      
+      - layout: left
+        title: Kinaxis
+        link: kinaxis.com
+        sub_title: DevOps Co-Op 
+        caption: September 2020 - December 2020
+        description: |
+            Worked in the DevOps team in charge of maintaining and developing tools used by other development teams. Also worked in CI/CD pipelines (<mark>Jenkins</mark>) to deploy software to remote servers as well as improve the software tools being worked on.
+
+            <b><u>Skills:</u></b> <mark>DevOps</mark>, <mark>Jenkins</mark>, <mark>CI/CD</mark>, <mark>PowerShell</mark>, <mark>C# (.NET Framework)</mark>, <mark>Alassian Suite (Confluence, Jira, Bitbucker)</mark>, <mark>Git</mark>
+
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Mouse Drawer
+        link: github.com/abdallah-eldali
+        # link_text: Project Website
+        additional_links:
+          - title:  abdallah-eldali/mouse-drawer
+            icon: fab fa-github
+            url: github.com/abdallah-eldali/dmouse-drawer
+        description: | 
+          This is a project I'm currently working on. It's a GUI application written in <mark>Python</mark> which makes the computer mouse automatically trace the borders of said image to draw it.
+
+          I'll soon update the project and add a demo to better showcase it.
+
+          <b><u>Skills:</u></b> <mark>Python</mark>, <mark>GUI Design</mark>
+      - layout: top-middle
+        title: Gym Reservation Web-bot
+        link: github.com/abdallah-eldali
+        additional_links:
+          - title:  abdallah-eldali/docker-auto-gym-reservation
+            icon: fab fa-github
+            url: github.com/abdallah-eldali/docker-auto-gym-reservation
+        description: | 
+          The idea of this project came about when my gym started to only allow people who made a reservation to be allowed inside due to the COVID-19 restrictions. The reservation was done online through a website (which isn't up anymore) where users had to enter the date they wanted to reserve a spot alongside their email, name, and phone number. So, I decided to automize this process by creating a <mark>Python</mark> script which uses the <mark>Selenium Framework</mark>, as well as using <mark>Docker</mark> to build an image for the script to run on a remote private virtual machine hosted on <mark>Azure</mark>.
+
+          I also integrated the <mark>Twilio API</mark> so that anytime the reservation was successful (or failed) the script running on a <mark>Docker</mark> container would send me a private message to my phone through the WhatsApp app.
+
+          This project was a great opportunity for me to solidify my knowledge in containers and practice with <mark>Docker</mark> and to have a try with the <mark>Selenium Framework</mark>.
+
+          Sadly, the project isn't being developed anymore as reservations are no longer required.
+
+          <b><u>Skills:</u></b> <mark>Python</mark>, <mark>Selenium</mark>, <mark>Docker</mark>, <mark>Azure</mark>, <mark>Twilio API</mark>
+
+  - title: About Site
+    layout: text
+    content: |
+      This is my personal website showcasing all my experiences and projects.
+
+      This site was made with <mark>GitHub Pages</mark> and <mark>Jekyll</mark>.
+
+      I want to give special thanks to [sproongen](https://github.com/sproogen) for providing [modern-resume-theme](https://github.com/sproogen/modern-resume-theme) which is the <mark>Jekyll Theme</mark> I'm currently using for this site.
+
+# Footer
+footer_show_references: false
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
